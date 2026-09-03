@@ -1,0 +1,26 @@
+NXCONTROLLER_PROFILES/1
+# license=Zlib
+# coverage=1 exact GUID source; no universal fallback is claimed
+# candidate admission remains mandatory before bundling
+#
+# INVARIANT BASE (nxinput 0.10.0). On the muOS family A/B and X/Y are a USER
+# PREFERENCE (two official database halves, modern/retro, re-linked by the
+# boot): freezing either half here was the 0.9.0 field defect. The mutable
+# GUID therefore never appears in this base bundle; the authenticated
+# variants live in controllers-modern.nxb / controllers-retro.nxb and are
+# declared only when the port FACE_LAYOUT selects them. Live authorities
+# (env mapping / current CFW database) always outrank all three files.
+#
+# source=PortMaster gamecontrollerdb captured byte-for-byte from the authorized
+# AISLPC R36T/K36S device class; no unpublished port is used as authority
+# source_file_sha256=4238023705e73ea94b468975d1d15f71cc8d63f8880b3cd205aebbe2a75f2a0f
+# source_line_number=1110
+# source_line_sha256=da0447deece5800c7c845652cb1a73893e706cbdb08601e33a2b74c5da3daa64
+# dialect=sdl2-gamecontrollerdb platform=Linux license=Zlib
+# claim=physically measured GO-Super 484b:1100 source; exact Tearscape
+# candidate admission is mandatory; no other device support is inferred
+# The line below is byte-intact from that pinned physical source. A binding is
+# never synthesized from a name, VID/PID or guess. The zero-CRC GUID form is
+# the database identity; nxinput projects the live CRC word only where SDL
+# itself would.
+190000004b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,back:b12,dpdown:b9,dpleft:b10,dpright:b11,dpup:b8,guide:b16,leftshoulder:b4,leftstick:b14,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b15,righttrigger:b7,rightx:a2,righty:a3,start:b13,x:b2,y:b3,platform:Linux,

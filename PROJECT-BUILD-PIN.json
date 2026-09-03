@@ -1,0 +1,30 @@
+{
+  "architecture": "aarch64",
+  "build_provenance_sha256": "f86a7736ddb9ed0cb0ab3b456b85d994662893c6ca5e84dc733e98ea210609e5",
+  "dotnet_runtime_manifest_sha256": "9e4780bc91d6370adc82c1c50f298a52849a169cf70f07bd333d794345571c49",
+  "dotnet_runtime_nupkg_sha256": "051bfc73f47f7d28bf9fb4cee616df71063ffc3da8861ec4f0645b0e73476d78",
+  "engine_build_receipt_sha256": "3db872646f8b12414fa6acf72ce0f6388f3d8abc5c29ccd4244b27bf752c4c3a",
+  "framework_commit": "4db2fff34ff1c6cd4019754d230f036c81834a2e",
+  "framework_pin_sha256": "3d63896b5f9e2dc3b74db63d7ecb408974280ffeca4f0e186a57bad1353cf447",
+  "outputs": {
+    "libEGL.so": {
+      "max_glibc": "GLIBC_2.17",
+      "sha256": "5918de39aebc29b1e3376fa534f3aecaa4c9d170e7ebf5029e3fbfa32807d632",
+      "size": 34544
+    },
+    "libGLESv2.so": {
+      "max_glibc": "GLIBC_2.17",
+      "sha256": "dba1fabb16fa1cadc3c14f028d6d5ff8c0129d15f3cc3645eab6087f99562d70",
+      "size": 99968
+    },
+    "tearscape-nextos": {
+      "max_glibc": "GLIBC_2.28",
+      "sha256": "7b1254cd3427196c81983548cb864aa1c742e0c33928fc68f9f3aef008043fb4",
+      "size": 73749808
+    }
+  },
+  "port_id": "tearscape",
+  "schema": "org.nextos.tearscape.project-build-pin",
+  "schema_version": 1,
+  "status": "final"
+}

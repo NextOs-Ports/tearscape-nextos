@@ -1,0 +1,382 @@
+{
+  "executable": "tearscape/tearscape-nextos",
+  "input_proof": {
+    "adapter_contract_sha256": "5b741567d62c9f28614e39b07e515086e2c207ede436d418865979463e327780",
+    "cases": [
+      {
+        "action": "player.roll",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "A",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.roll"
+      },
+      {
+        "action": "player.switch_tool",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "B",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.switch_tool"
+      },
+      {
+        "action": "player.select_previous",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "L1",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.select_prev"
+      },
+      {
+        "action": "player.use_shield",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "L2",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.use_shield"
+      },
+      {
+        "action": "player.move",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "LEFT_STICK",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "motion",
+        "sink": "engine.input.move"
+      },
+      {
+        "action": "player.select_next",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "R1",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.select_next"
+      },
+      {
+        "action": "player.use_tool",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "R2",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.use_tool"
+      },
+      {
+        "action": "player.open_map",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "SELECT",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.open_map"
+      },
+      {
+        "action": "system.pause",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "START",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.pause"
+      },
+      {
+        "action": "player.attack",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "X",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.attack"
+      },
+      {
+        "action": "player.heal",
+        "context": "gameplay",
+        "context_source": "scene:level",
+        "control": "Y",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.heal"
+      },
+      {
+        "action": "menu.accept",
+        "context": "menu",
+        "context_source": "scene:ui",
+        "control": "A",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.ui_accept"
+      },
+      {
+        "action": "menu.back",
+        "context": "menu",
+        "context_source": "scene:ui",
+        "control": "B",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.ui_cancel"
+      },
+      {
+        "action": "menu.navigate",
+        "context": "menu",
+        "context_source": "scene:ui",
+        "control": "LEFT_STICK",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "motion",
+        "sink": "engine.ui_direction"
+      },
+      {
+        "action": "system.pause",
+        "context": "menu",
+        "context_source": "scene:ui",
+        "control": "START",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "engine.input.pause"
+      }
+    ],
+    "contexts": [
+      {
+        "context": "gameplay",
+        "observed": true,
+        "source": "scene:level"
+      },
+      {
+        "context": "menu",
+        "observed": true,
+        "source": "scene:ui"
+      }
+    ],
+    "evidence_class": "ON_DEVICE_AUTOMATED_INPUT_PROOF",
+    "generation": "eaa12f423da2d63a31e0bbfaf877504a3347fcfb531f3c8682a0fee81fccfd43",
+    "mapping_sha256": "3f9915c21cbc03378c8a21c108a58e6ca6d1c5fcb7d799b4a099096fab573908",
+    "port_id": "tearscape",
+    "run_id": "tearscape-2525587-1788395952-9815",
+    "runtime": {
+      "evidence_schema": "nxinput-gptk-event-evidence/1",
+      "frame_proof_marker": "nxgl-godot-frame-proof/2",
+      "godot_marker": "nxinput-godot-runtime/1",
+      "marker": "nxinput-gptk-runtime/3",
+      "symbols": [
+        "nxgl_frame_proof_consume_fatal",
+        "nxgl_frame_proof_is_fatal",
+        "nxinput_gptk_decide",
+        "nxinput_gptk_event_evidence_schema",
+        "nxinput_gptk_live_clear_context",
+        "nxinput_gptk_live_feed",
+        "nxinput_gptk_live_feed_vector",
+        "nxinput_gptk_live_init",
+        "nxinput_gptk_live_register",
+        "nxinput_gptk_live_register_vector",
+        "nxinput_gptk_live_seal",
+        "nxinput_gptk_live_set_context",
+        "nxinput_gptk_live_should_consume",
+        "nxinput_gptk_load_at",
+        "nxinput_gptk_load_receipt_json",
+        "nxinput_gptk_parse",
+        "nxinput_gptk_runtime_marker",
+        "tearscape_gptk_inputmap_sink",
+        "tearscape_gptk_inputmap_vector_sink",
+        "tearscape_gptk_quit_sink"
+      ]
+    },
+    "safety": {
+      "failed_ack": {
+        "native_replay": false,
+        "result": "FATAL"
+      },
+      "missing_sink": {
+        "delivery_count": 0,
+        "result": "PASSTHROUGH",
+        "suppressed": false
+      },
+      "unknown_context": {
+        "delivery_count": 0,
+        "result": "PASSTHROUGH",
+        "suppressed": false
+      }
+    },
+    "schema": "nxinput-gptk-event-evidence/1",
+    "schema_version": 1,
+    "sinks": [
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "adapter.system.quit",
+        "symbol": "tearscape_gptk_quit_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.attack",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.heal",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.move",
+        "symbol": "tearscape_gptk_inputmap_vector_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.open_map",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.pause",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.roll",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.select_next",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.select_prev",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.switch_tool",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.use_shield",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.use_tool",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.input.zoom_map",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.ui_accept",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.ui_cancel",
+        "symbol": "tearscape_gptk_inputmap_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "engine.ui_direction",
+        "symbol": "tearscape_gptk_inputmap_vector_sink",
+        "targets": [
+          "tearscape/tearscape-nextos"
+        ]
+      }
+    ],
+    "verdict": "OK"
+  },
+  "input_proof_receipt_sha256": "a31c5ac14146c4bc5ba067063248217d67848ae967f9f3511186390d059fde22",
+  "schema": "nxrelease-candidate-lock-v1",
+  "schema_version": 1,
+  "sha256": "7b1254cd3427196c81983548cb864aa1c742e0c33928fc68f9f3aef008043fb4",
+  "video_proof": {
+    "generation": "eaa12f423da2d63a31e0bbfaf877504a3347fcfb531f3c8682a0fee81fccfd43",
+    "port_id": "tearscape",
+    "reason": "non-black",
+    "run_id": "tearscape-2525587-1788395952-9815",
+    "schema": "org.nextos.nxruntime.video-proof",
+    "schema_version": 1,
+    "verdict": "OK"
+  },
+  "video_proof_receipt_sha256": "33e3bd9a8aa6dadbe39ef32fb1a1af88897154af272e51ab6b24bed02d2621b9"
+}

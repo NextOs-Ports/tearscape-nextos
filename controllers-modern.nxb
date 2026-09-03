@@ -1,0 +1,19 @@
+NXCONTROLLER_PROFILES/1
+# license=Zlib
+# coverage=1 exact GUID source; no universal fallback is claimed
+# candidate admission remains mandatory before bundling
+#
+# FACE_LAYOUT VARIANT: modern (nxinput 0.10.0). One of the two OFFICIAL
+# halves of the muOS 2601.1 RG40XX-H user preference, byte-intact from the
+# official ROM fixture. This file is consulted ONLY as authority 3, and only
+# when the port FACE_LAYOUT selects the modern variant while no live
+# mapping source resolves; a live env mapping or the CFW's current database
+# always wins. The paired variant differs exclusively in the authorized
+# A/B/X/Y face bindings and in this provenance metadata.
+# source=official muOS 2601.1 RG40XX-H ROM fixture, byte-intact line
+# source_path=framework/tests/fixtures/muos-2601.1/gamecontrollerdb-rg40xx-h-modern.txt
+# source_file_sha256=bcb4c8297d3fbdff96ee68006fcd21a8576a7ef99f604f974b29fc8dc17261a8
+# dialect=portmaster-joydev-legacy platform=Linux license=Zlib
+# normalization=nxinput_pm_normalize_source version=0.10.0 (semantic domain proof)
+# expected_live_guid=19004ca6010000000100000000010000
+19000000010000000100000000010000,Deeplay-keys,a:b4,b:b3,x:b5,y:b6,leftshoulder:b7,rightshoulder:b8,lefttrigger:b13,righttrigger:b14,guide:b11,start:b10,back:b9,dpup:h0.1,dpleft:h0.8,dpright:h0.2,dpdown:h0.4,volumedown:b1,volumeup:b2,leftx:a0,lefty:a1,leftstick:b12,rightx:a2,righty:a3,rightstick:b15,platform:Linux,
